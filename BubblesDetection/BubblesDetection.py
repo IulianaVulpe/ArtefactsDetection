@@ -76,17 +76,3 @@ colorbar()
 show()
 figure()
 """
-
-
-"""
-subsampled = im[0::5,0::5] 
-hsvsubsampled = skimage.color.rgb2hsv(1.*subsampled)
-for i in range(int(hsvsubsampled.shape[0])):
-        for j in range(int(hsvsubsampled.shape[1])):
-            if hsvsubsampled[i,j,0]<32 and hsvsubsampled[i,j,0]>40:
-                hsvsubsampled[i,j] = (0.,0.,0.)
-imshow(hsvsubsampled)
-figure()
-rgbsubsampled = skimage.color.hsv2rgb(hsvsubsampled)
-imshow(rgbsubsampled)
-"""
